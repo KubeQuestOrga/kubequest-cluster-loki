@@ -9,5 +9,5 @@
 sudo chmod 644 /etc/rancher/k3s/k3s.yaml
 sudo helm repo add grafana https://grafana.github.io/helm-charts
 sudo helm repo update
-sudo KUBECONFIG=/etc/rancher/k3s/k3s.yaml helm install my-loki-stack grafana/loki-stack --version 2.10.2 --namespace argo-cd --create-namespace --set grafana.enabled=true --set promtail.enabled=true
+sudo KUBECONFIG=/etc/rancher/k3s/k3s.yaml helm install loki-stack grafana/loki-stack --version 2.10.2 --namespace loki-grafana-stack --create-namespace --set grafana.enabled=true --set promtail.enabled=true
 ```
