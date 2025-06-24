@@ -1,5 +1,18 @@
 # KubeQuest - Loki / Grafana - Cluster K3s
 
+## Pourquoi Loki + Grafana ❓
+
+Le tableau de bord Kubernetes permet de gérer les objets du cluster,  
+mais il est **limité pour l'observation en profondeur** des logs et des performances.
+
+Pour une **observabilité complète**, on utilise :
+- **Loki** : une solution de centralisation de logs, développée par Grafana Labs, pensée comme "Prometheus pour les logs".
+- **Promtail** : un agent déployé sur chaque nœud qui collecte les logs des pods.
+- **Grafana** : une plateforme de visualisation des métriques **et des logs**.
+
+<br /><br /><br /><br />
+
+
 ## ⚙ Setup Environment
 1. Connect to the NODE MASTER in Cluster K3S.
 2. Install HELM : https://helm.sh/docs/intro/install/
